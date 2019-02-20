@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AFBABBE5221DA300001B72E3 /* Prettifier.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFDA3928221412B500AF18CE /* Prettifier.framework */; };
 		AFDA392D221412B500AF18CE /* Prettifier.h in Headers */ = {isa = PBXBuildFile; fileRef = AFDA392B221412B500AF18CE /* Prettifier.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AFE3CFA6221419EE00D29FF7 /* PrettyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE3CFA5221419EE00D29FF7 /* PrettyJSON.swift */; };
 /* End PBXBuildFile section */
@@ -24,7 +23,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AFBABBE5221DA300001B72E3 /* Prettifier.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

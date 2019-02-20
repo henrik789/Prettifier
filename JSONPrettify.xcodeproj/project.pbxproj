@@ -7,8 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AF5925BC221DA86E00FD9F57 /* Prettifier.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF5925BB221DA86E00FD9F57 /* Prettifier.framework */; };
-		AF5925BD221DA86E00FD9F57 /* Prettifier.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AF5925BB221DA86E00FD9F57 /* Prettifier.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AF5925C6221DAAEA00FD9F57 /* Prettifier.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF5925C5221DAAEA00FD9F57 /* Prettifier.framework */; };
 		AFBABBAE221D76B6001B72E3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFBABBAD221D76B6001B72E3 /* AppDelegate.swift */; };
 		AFBABBB0221D76B6001B72E3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFBABBAF221D76B6001B72E3 /* ViewController.swift */; };
 		AFBABBB3221D76B6001B72E3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFBABBB1221D76B6001B72E3 /* Main.storyboard */; };
@@ -16,22 +15,8 @@
 		AFBABBB8221D76B7001B72E3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFBABBB6221D76B7001B72E3 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		AFBABBCB221D77AC001B72E3 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				AF5925BD221DA86E00FD9F57 /* Prettifier.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
-		AF5925BB221DA86E00FD9F57 /* Prettifier.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Prettifier.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF5925C5221DAAEA00FD9F57 /* Prettifier.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Prettifier.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFBABBAA221D76B6001B72E3 /* JSONPrettify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JSONPrettify.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFBABBAD221D76B6001B72E3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AFBABBAF221D76B6001B72E3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -46,19 +31,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AF5925BC221DA86E00FD9F57 /* Prettifier.framework in Frameworks */,
+				AF5925C6221DAAEA00FD9F57 /* Prettifier.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AF5925C2221DAACC00FD9F57 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AF5925C5221DAAEA00FD9F57 /* Prettifier.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		AFBABBA1221D76B6001B72E3 = {
 			isa = PBXGroup;
 			children = (
-				AF5925BB221DA86E00FD9F57 /* Prettifier.framework */,
 				AFBABBAC221D76B6001B72E3 /* JSONPrettify */,
 				AFBABBAB221D76B6001B72E3 /* Products */,
+				AF5925C2221DAACC00FD9F57 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -93,7 +86,6 @@
 				AFBABBA6221D76B6001B72E3 /* Sources */,
 				AFBABBA7221D76B6001B72E3 /* Frameworks */,
 				AFBABBA8221D76B6001B72E3 /* Resources */,
-				AFBABBCB221D77AC001B72E3 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -301,7 +293,6 @@
 		AFBABBBD221D76B7001B72E3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LT2ZWB24ZA;
@@ -320,7 +311,6 @@
 		AFBABBBE221D76B7001B72E3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LT2ZWB24ZA;
