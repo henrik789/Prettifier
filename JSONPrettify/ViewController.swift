@@ -2,7 +2,7 @@ import UIKit
 import Prettifier
 
 class ViewController: UIViewController {
-    let baseURL = "https://apiv2.bitcoinaverage.com/indices/global/ticker/BTCSEK"
+    let baseURL = "https://jsonplaceholder.typicode.com/users"
     var dictionary: [String: Any] = [:]
     @IBOutlet weak var textView: UITextView!
     

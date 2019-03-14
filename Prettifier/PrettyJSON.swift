@@ -36,7 +36,7 @@ private func prettyString(fromDictionary dictionary: [String: Any], indentationL
     let lines = dictionary.enumerated().map { (offset: Int, element: (key: String, value: Any)) -> NSAttributedString in
         let keyString = NSAttributedString(string: "\"\(element.key)\"", attributes: attributes.keysAttributes)
         
-        let valueString = prettyString(fromValue: element.value, indentationLevel: indentationLevel + 1, attributes: attributes)
+        let valueString = prettyString(fromValue: element.value, indentationLevel: indentationLevel + 2, attributes: attributes)
         
         let result: NSMutableAttributedString = NSMutableAttributedString(string: "")
         
