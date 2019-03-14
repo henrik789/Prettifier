@@ -14,6 +14,12 @@ public struct PrettifyingAttributes {
     let signsAttributes: [NSAttributedString.Key : Any]
     let keysAttributes: [NSAttributedString.Key : Any]
     let valuesAttributes: [NSAttributedString.Key : Any]
+    
+    public init(signsAttributes: [NSAttributedString.Key : Any], keysAttributes: [NSAttributedString.Key : Any], valuesAttributes: [NSAttributedString.Key : Any]) {
+        self.signsAttributes = signsAttributes
+        self.keysAttributes = keysAttributes
+        self.valuesAttributes = valuesAttributes
+    }
 }
 
 public let prettyDefault = PrettifyingAttributes(signsAttributes: [NSAttributedString.Key.foregroundColor : UIColor.red],
